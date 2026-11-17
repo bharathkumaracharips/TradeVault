@@ -1,4 +1,4 @@
-# System Architecture: Trade Finance Escrow DApp
+# System Architecture: TradeVault
 **Platform:** EVM Blockchain + Milestone-Based Escrow Vault + EAS / EIP-712 Attestation Engine  
 **Standard Payment Asset:** ERC-20 Stablecoins (USDC / USDT)  
 

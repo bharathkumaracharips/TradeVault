@@ -1,13 +1,13 @@
 {
-  "name": "@tradefinance/sdk",
+  "name": "@tradevault/sdk",
   "version": "1.0.0",
-  "description": "TypeScript SDK for Trade Finance Milestone Escrow, Documents, and EAS Attestations",
+  "description": "TypeScript SDK for TradeVault Milestone Escrow, Documents, and EAS Attestations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  "author": "Trade Finance Protocol Team",
+  "author": "TradeVault Protocol Team",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.4.0"

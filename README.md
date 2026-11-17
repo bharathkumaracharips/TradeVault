@@ -1,4 +1,4 @@
-# TradeEscrow: Milestone-Based Trade Finance Escrow DApp
+# TradeVault: Milestone-Based Trade Finance Escrow DApp
 
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?style=for-the-badge&logo=solidity)
 ![Foundry](https://img.shields.io/badge/Foundry-Framework-orange?style=for-the-badge)
@@ -16,7 +16,7 @@ A production-grade, milestone-based trade finance escrow platform facilitating i
                                 +-----------------------------------------------+
                                 |        SMART CONTRACT ESCROW ECOSYSTEM        |
                                 |  ParticipantRegistry  |  TradeAgreementMgr    |
-                                |  TradeEscrowVault     |  MilestoneManager     |
+                                |  TradeVault           |  MilestoneManager     |
                                 |  TradeDocumentRegistry|  TradeDisputeManager  |
                                 +-----------------------------------------------+
                                            ^                             ^
@@ -42,13 +42,13 @@ A production-grade, milestone-based trade finance escrow platform facilitating i
 ## 2. Directory Structure
 
 ```
-trade-finance-escrow/
+TradeVault/
 ├── contracts/                  # Foundry Solidity smart contracts
 │   ├── src/
 │   │   ├── interfaces/         # Standard interfaces & custom errors
 │   │   ├── ParticipantRegistry.sol      # Buyer, Seller, Carrier, Inspector, Arbitrator
 │   │   ├── TradeAgreementManager.sol    # Trade agreements & milestone terms
-│   │   ├── TradeEscrowVault.sol         # Segregated stablecoin escrow
+│   │   ├── TradeVault.sol               # Segregated stablecoin escrow
 │   │   ├── TradeDocumentRegistry.sol    # Document commitments & IPFS CIDs
 │   │   ├── AttestationIssuerRegistry.sol# Whitelist of approved attestation issuers
 │   │   ├── MilestoneManager.sol         # Challenge periods & completion tracking
@@ -61,7 +61,7 @@ trade-finance-escrow/
 │   └── crates/
 │       ├── core-trade/         # Trade models, milestone allocations, EAS digests
 │       └── server/             # REST API for agreements, escrow, attestations
-├── packages/sdk-ts/            # TypeScript SDK (@tradefinance/sdk)
+├── packages/sdk-ts/            # TypeScript SDK (@tradevault/sdk)
 ├── frontend/                   # Next.js 14 App Router interactive UI
 └── specs/                      # Architecture, domain model, and threat models
     ├── architecture.md         # End-to-end data flow & participants
@@ -103,7 +103,7 @@ cargo run -p server
 cd frontend
 npm install
 npm run dev
-# Open http://localhost:3000 to launch the TradeEscrow DApp
+# Open http://localhost:3000 to launch the TradeVault DApp
 ```
 
 ---
